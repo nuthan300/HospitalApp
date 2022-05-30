@@ -20,7 +20,7 @@ public class AddressDto {
 	
 	private String state  ;
 	
-	private String pincode ;
+	private int pincode ;
 	
 	@OneToOne
 	@JoinColumn
@@ -59,11 +59,11 @@ public class AddressDto {
 		this.state = state;
 	}
 
-	public String getPincode() {
+	public int getPincode() {
 		return pincode;
 	}
 
-	public void setPincode(String pincode) {
+	public void setPincode(int pincode) {
 		this.pincode = pincode;
 	}
 

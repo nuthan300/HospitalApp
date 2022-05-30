@@ -1,11 +1,11 @@
-package hibernate_app.dao;
+package hibernate_app.service;
 
 import java.util.List;
 
 import hibernate_app.dto.ObservationDto;
 
 
-public interface ObservationDao {
+public interface ObservationService {
 	boolean saveObservation(int encounter_id,ObservationDto observation);
 	ObservationDto getObservationById(int id);
 	boolean removeObservation(int id);

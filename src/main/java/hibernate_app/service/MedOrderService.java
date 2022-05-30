@@ -1,4 +1,4 @@
-package hibernate_app.dao;
+package hibernate_app.service;
 
 import java.util.List;
 
@@ -6,7 +6,7 @@ import hibernate_app.dto.MedOrderDto;
 
 
 
-public interface MedOrderDao {
+public interface MedOrderService {
 	boolean saveOrder(int encounter_id ,MedOrderDto order);
 	MedOrderDto getOrderById(int id);
 	boolean removeOrder(int id);

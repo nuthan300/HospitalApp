@@ -3,6 +3,7 @@ package hibernate_app.dto;
 import java.time.LocalDateTime;
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -28,7 +29,7 @@ public class MedOrderDto {
 	@JoinColumn
 	private EncounterDto encounterDto ;
 	
-	@OneToMany
+	@OneToMany(mappedBy = "medOrderDto" ,cascade = CascadeType.ALL)
 	private List<ItemDto> items ;
 
 	public int getId() {
